@@ -1,0 +1,154 @@
+<html>
+
+    <head>
+
+       <title>Global Warming</title> 
+       <link rel = "stylesheet"
+       type = "text/css"
+       href = "Style.css"
+       />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+
+    <body background="Images/CustomWebsiteBG2.jpg">
+
+   
+    <div class="topnav">
+        <a class = "active" href="index.html">Home</a>
+        <a href="industrial.html">Industrial activities</a>
+        <a href="deforestation.html">Deforestation</a>
+        <a href="agricultural.html">Agricultural Activities </a>
+        <a href="news.html">News</a>
+        <a href="carbon.html">Carbon Pollution</a>
+        <a href="climate.html"> Climate Change</a>
+        <a href="about.html">About Us</a>
+        <a href="credits.html">Credits</a>
+        <a href="contact.html">Contact Us</a>
+       
+   </div><br>
+   <h1>What is Global Warming?</h1><br>
+<div class="info">
+
+  
+  <div class = info2>
+    <p>Global warming is the long-term heating of Earth’s climate system observed since the pre-industrial period (between 1850 and 1900) due to human activities, primarily fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere. The term is frequently used interchangeably with the term climate change, though the latter refers to both human- and naturally produced warming and the effects it has on our planet. It is most commonly measured as the average increase in Earth’s global surface temperature.
+       <br><br> Since the pre-industrial period, human activities are estimated to have increased Earth’s global average temperature by about 1 degree Celsius (1.8 degrees Fahrenheit), a number that is currently increasing by 0.2 degrees Celsius (0.36 degrees Fahrenheit) per decade. Most of the current warming trend is extremely likely (greater than 95 percent probability) the result of human activity since the 1950s and is proceeding at an unprecedented rate over decades to millennia.
+    
+    
+    </p>
+    <p >This graph illustrates the change in global surface temperature relative to 1951-1980 average 
+        <br>temperatures, with the year 2020 tying with 2016 for warmest on record
+        <br> (Source: NASA's Goddard Institute for Space Studies).<br> Credit: NASA/JPL-Caltech</p>
+  
+  
+    </div>
+    <a href="https://climate.nasa.gov/system/internal_resources/details/original/2385_temp-graph-012721.jpg" target="_blank">   
+    <img src="Images/GlobalWarmingStats.jpg" width=700 height=600 align='right'>
+    </a>
+  
+</div>
+
+  
+<div class="slideshow-container-quotes">
+  
+    <div class="mySlides-quotes">
+      <q>Climate change is real. It is happening right now, it is the most urgent threat facing our entire
+           species and we need to work collectively together and stop procrastinating.
+
+        </q>
+      <p class="author">- Leonardo Di Caprio, Actor & Environmentalist</p>
+    </div>
+    
+    <div class="mySlides-quotes">
+      <q>“One thing leads to the other. Deforestation leads to climate change,
+           which leads to ecosystem losses, which negatively impacts our livelihoods – it’s a vicious cycle.”
+
+        </q>
+      <p class="author">- Gisele Bundchen, Supermodel & UN Goodwill Ambassador</p>
+    </div>
+    
+    <div class="mySlides-quotes">
+        <q>Climate change is the greatest threat to our existence in our short history on this planet. 
+            Nobody’s going to buy their way out of its effects.”
+  
+          </q>
+        <p class="author">- Mark Ruffalo, Actor & Environmentalist</p>
+    </div>
+    
+    <div class="mySlides-quotes">
+        <q>“I’ve starred in a lot of science fiction movies and, 
+            let me tell you something, climate change is not science fiction.
+             This is a battle in the real world, it is impacting us right now.”
+
+           </q>
+        <p class="author">-  Arnold Schwarzenegger, Actor & Former Governor of California</p>
+    </div>
+
+    <div class="mySlides-quotes">
+        <q>“Let’s double down on solar energy, let’s be more energy-efficient, let’s weatherize our homes.
+             We can build a better, healthier economy based on good-paying, clean energy jobs.”
+  
+          </q>
+        <p class="author">- Ian Somerhalder, Actor</p>
+    </div>
+
+    <div class="mySlides-quotes">
+        <q>“We don’t have time to sit on our hands as our planet burns. For young people, climate change is bigger than election or re-election. It’s life or death.”
+
+            Alexandria Ocasio-Cortez, US Politician & Activist
+  
+          </q>
+        <p class="author">- Mark Ruffalo, Actor & Environmentalist</p>
+    </div>
+
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides-quotes");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    
+    </script>
+    
+    </body>
+    
+</html>

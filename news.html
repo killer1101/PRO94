@@ -1,0 +1,88 @@
+<html>
+
+    <head>
+
+       <title>Global Warming</title> 
+       <link rel = "stylesheet"
+       type = "text/css"
+       href = "Style.css"
+       />
+
+    </head>
+
+    <body background="Images/CustomWebsiteBG2.jpg">
+
+   
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="industrial.html">Industrial activities</a>
+        <a href="deforestation.html">Deforestation</a>
+        <a href="agricultural.html">Agricultural Activities </a>
+        <a class = "active" href="news.html">News</a>
+        <a href="carbon.html">Carbon Pollution</a>
+        <a href="climate.html"> Climate Change</a>
+        <a href="about.html">About Us</a>
+        <a href="credits.html">Credits</a>
+        <a href="contact.html">Contact Us</a>  
+    </div>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <a href="https://climate.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2C+created_at+desc&search=&year=2021%3Apublish_date&category=19%2C98" target="_blank">
+      <div class="text">News from Nasa</div>
+      <div class="numbertext">1 / 3</div>
+      <img src="Images/nasa.png" style="width:50%">
+        </a>
+      
+    </div>
+  
+    <div class="mySlides fade">
+        <a href="https://edition.cnn.com/specials/world/cnn-climate" target="_blank">
+      <div class="numbertext">2 / 3</div>
+      <img src="Images/cnn-1-logo-png-transparent.png" style="width:50%">
+      <div class="text">CNN News</div>
+        </a>
+    </div>
+  
+    <div class="mySlides fade">
+        <a href="https://www.sciencedaily.com/news/earth_climate/global_warming/" target="_blank">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/SD.png" style="width:100%">
+      
+        </a>
+    </div>
+  
+    
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+ var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
+
+
+    </body>
+    
+</html>
